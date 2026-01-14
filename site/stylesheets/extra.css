@@ -1,0 +1,23 @@
+/* docs/stylesheets/extra.css */
+
+body {
+    /* Carga la imagen desde la carpeta img */
+    background-image: url('../img/background.png');
+    
+    /* Hace que la imagen cubra toda la pantalla */
+    background-size: cover;
+    
+    /* La imagen se queda fija al hacer scroll */
+    background-attachment: fixed;
+    
+    /* Centra la imagen */
+    background-position: center;
+}
+
+/* Opcional: Esto pone un fondo semitransparente al texto 
+   para que se pueda leer bien sobre la imagen de fondo */
+.md-content {
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 8px;
+    padding: 15px;
+}
