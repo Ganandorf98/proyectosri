@@ -10,9 +10,17 @@ theme:
     accent: amber
   features:
     - search.highlight
-    - search.share
-    - content.code.copy
     - navigation.tabs
+
+nav:
+  - Inicio: index.md
+  - Roles y Objetivos: roles.md
+  - Mecánica de Juego: fases.md
+  - Guía de Cartas: cartas.md
+  - Personajes: personajes.md
+  - English Version:
+      - Home: en/index.md
+      - Roles: en/roles.md
 
 markdown_extensions:
   - admonition
@@ -25,13 +33,3 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-
-nav:
-  - Inicio: index.md
-  - Roles y Objetivos: roles.md
-  - Mecánica de Juego: fases.md
-  - Guía de Cartas: cartas.md
-  - Personajes: personajes.md
-  - English Version:
-      - Home: en/index.md
-      - Roles: en/roles.md
