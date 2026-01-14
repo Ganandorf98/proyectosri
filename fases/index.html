@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#el-turno-de-juego" class="md-skip">
+        <a href="#mecanica-de-juego-material-gamestate" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,8 +94,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href=".." title="Manual de Supervivencia - BANG!" class="md-header__button md-logo" aria-label="Manual de Supervivencia - BANG!" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -320,8 +319,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Manual de Supervivencia - BANG!" class="md-nav__button md-logo" aria-label="Manual de Supervivencia - BANG!" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../img/logo.png" alt="logo">
 
     </a>
     Manual de Supervivencia - BANG!
@@ -399,6 +397,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecánica de Juego
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -415,6 +431,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fases-del-turno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fases del Turno
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -607,6 +653,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fases-del-turno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fases del Turno
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -622,17 +687,41 @@
 
 
 
-<h1 id="el-turno-de-juego">El Turno de Juego</h1>
-<p>Cada turno se divide estrictamente en tres fases que debes seguir en orden:</p>
+<h1 id="mecanica-de-juego-material-gamestate">Mecánica de Juego :material-GameState:</h1>
+<p>En esta sección se detallan las reglas fundamentales para sobrevivir en el Lejano Oeste.</p>
+<details class="info" open="open">
+<summary>Regla de Oro <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z"/></svg></span></summary>
+<p>Durante tu fase de acción, solo puedes jugar <strong>una carta de ¡BANG!</strong> por turno, a menos que tengas un arma o habilidad que indique lo contrario.</p>
+</details>
+<h2 id="fases-del-turno">Fases del Turno</h2>
+<p>El juego se desarrolla siguiendo un orden estricto de tres fases:</p>
 <ol>
-<li><strong>Robar dos cartas:</strong> Del mazo central.</li>
-<li><strong>Jugar cartas:</strong> Puedes jugar tantas como quieras, con dos límites:<ul>
-<li>Solo puedes jugar <strong>una</strong> carta de <em>¡BANG!</em> por turno.</li>
-<li>No puedes tener dos cartas iguales frente a ti (ej. dos barriles).</li>
+<li>
+<p><strong>Robo</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 2h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m1 2v8h12V4zm14 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16zm0 4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16z"/></svg></span></p>
+<ul>
+<li>Debes robar las dos primeras cartas del mazo de robo.</li>
+<li>Algunos personajes como <em>Jesse Jones</em> o <em>Pedro Ramirez</em> pueden alterar esta fase.</li>
 </ul>
 </li>
-<li><strong>Descartar exceso:</strong> Si tienes más cartas que puntos de vida actuales, debes descartar el sobrante.</li>
+<li>
+<p><strong>Acción</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 5h16v4h-1v1h-6a1 1 0 0 0-1 1v1a2 2 0 0 1-2 2H9.62c-.38 0-.73.22-.9.56l-2.45 4.89c-.17.34-.51.55-.89.55H2s-3 0 1-6c0 0 3-4-1-4V5h1l.5-1h3zm7 7v-1a1 1 0 0 0-1-1h-1s-1 1 0 2a2 2 0 0 1-2-2 1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1"/></svg></span></p>
+<ul>
+<li>Puedes jugar cualquier número de cartas para ayudarte o herir a los demás.</li>
+<li>Recuerda comprobar siempre tu <strong>alcance</strong> (distancia) antes de disparar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Descarte</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.03 3 18 20.31c-.17.96-1 1.69-2 1.69H8c-1 0-1.83-.73-2-1.69L2.97 3zM5.36 5 8 20h8l2.64-15zM9 18v-4h4v4zm4-4.82L9.82 10 13 6.82 16.18 10z"/></svg></span></p>
+<ul>
+<li>Una vez terminadas tus acciones, no puedes tener más cartas en la mano que puntos de vida actuales.</li>
+<li>El exceso de cartas debe enviarse al mazo de descartes.</li>
+</ul>
+</li>
 </ol>
+<div class="admonition success">
+<p class="admonition-title">Consejo de Supervivencia</p>
+<p>Mantén siempre un <em>¡FALLASTE!</em> en la mano. Nunca sabes cuándo un forajido decidirá que eres su próximo objetivo.</p>
+</div>
 
 
 
