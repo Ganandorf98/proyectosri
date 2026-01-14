@@ -1,23 +1,37 @@
 site_name: Manual de Supervivencia - BANG!
-site_author: Tu Nombre Completo  # REQUISITO: Pon tu nombre aquí
+[cite_start]site_author: Ganandorf98 # 
+site_url: https://ganandorf98.github.io/proyectosri/
+
 theme:
   name: material
+  [cite_start]language: es # 
   palette:
     primary: deep orange
     accent: amber
+  features:
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - navigation.tabs # Mejora la navegación bilingüe
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - attr_list
-  - tables
+  - [cite_start]admonition # 
+  - [cite_start]pymdownx.details # 
+  - [cite_start]attr_list # 
+  - [cite_start]tables # 
+  - [cite_start]pymdownx.emoji: # Iconos 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Inicio: index.md
   - Roles y Objetivos: roles.md
   - Mecánica de Juego: fases.md
   - Guía de Cartas: cartas.md
-  - Personajes: personajes.md  # Nueva página añadida
-
-extra_css:
-  - stylesheets/extra.css
+  - Personajes: personajes.md
+  - [cite_start]English Version: # Bilingüe
+      - Home: en/index.md
+      - Roles: en/roles.md
