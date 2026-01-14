@@ -1,19 +1,20 @@
 site_name: Manual de Supervivencia - BANG!
+site_author: Tu Nombre Completo  # REQUISITO: Pon tu nombre aquí
 theme:
-  name: material  # Requiere instalar: pip install mkdocs-material
+  name: material
   palette:
     primary: deep orange
     accent: amber
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - tables
 
 nav:
   - Inicio: index.md
   - Roles y Objetivos: roles.md
   - Mecánica de Juego: fases.md
   - Guía de Cartas: cartas.md
-
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details # Requiere instalar: pip install pymdown-extensions
-  - attr_list
-  - tables
+  - Personajes: personajes.md  # Nueva página añadida
