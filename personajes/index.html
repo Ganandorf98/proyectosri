@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -378,16 +380,9 @@
 
 
 <h1 id="personajes-y-habilidades">Personajes y Habilidades</h1>
-<p>Cada jugador encarna a un pistolero único con una habilidad especial y una cantidad determinada de puntos de vida (balas). ¡Conoce a tus aliados y enemigos!</p>
-<details class="info" open="open">
-<summary>Cómo leer a los personajes</summary>
-<ul>
-<li><strong>Balas:</strong> Representan tu vida máxima. El Sheriff siempre comienza con <strong>una bala extra</strong>.</li>
-<li><strong>Habilidad:</strong> Es una ventaja única que puedes usar durante la partida.</li>
-</ul>
-</details>
+<p>Cada pistolero tiene una habilidad única. El Sheriff juega con el personaje boca arriba y suma +1 bala a su vida máxima.</p>
 <details class="abstract">
-<summary>Pistoleros del Salvaje Oeste</summary>
+<summary>Lista de Personajes</summary>
 <table>
 <thead>
 <tr>
@@ -400,39 +395,99 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Bart Cassidy</strong></td>
-<td style="text-align: center;"><img alt="Bart" src="img/bart.png" width="70" /></td>
+<td style="text-align: center;"><img alt="Bart" src="img/bartcassidy.png" width="60" /></td>
 <td style="text-align: center;">4</td>
-<td style="text-align: left;">Cada vez que pierde un punto de vida, roba una carta del mazo inmediatamente.</td>
+<td style="text-align: left;">Si pierde una vida, roba una carta del mazo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Black Jack</strong></td>
+<td style="text-align: center;"><img alt="Black" src="img/blackjack.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Muestra la segunda carta que roba. Si es Roja (Corazón/Diamante), roba otra más.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Calamity Janet</strong></td>
-<td style="text-align: center;"><img alt="Janet" src="img/janet.png" width="70" /></td>
+<td style="text-align: center;"><img alt="Janet" src="img/calamityjanet.png" width="60" /></td>
 <td style="text-align: center;">4</td>
-<td style="text-align: left;">Puede usar cartas de <em>¡BANG!</em> como <em>¡FALLASTE!</em> y viceversa.</td>
+<td style="text-align: left;">Puede usar <em>¡BANG!</em> como <em>¡FALLASTE!</em> y viceversa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>El Gringo</strong></td>
+<td style="text-align: center;"><img alt="Gringo" src="img/elgringo.png" width="60" /></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Si pierde una vida por un ataque, roba una carta de la mano del atacante.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Jesse Jones</strong></td>
-<td style="text-align: center;"><img alt="Jesse" src="img/jesse.png" width="70" /></td>
+<td style="text-align: center;"><img alt="Jesse" src="img/jessejones.png" width="60" /></td>
 <td style="text-align: center;">4</td>
-<td style="text-align: left;">Al robar su primera carta, puede hacerlo de la mano de otro jugador en lugar del mazo.</td>
+<td style="text-align: left;">Puede robar su primera carta de la mano de otro jugador.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Jourdonnais</strong></td>
+<td style="text-align: center;"><img alt="Jourdonnais" src="img/jourdonnais.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Tiene un <em>Barril</em> imaginario siempre activo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kit Carlson</strong></td>
+<td style="text-align: center;"><img alt="Kit" src="img/kitcarlson.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Mira las 3 primeras cartas del mazo, elige 2 y devuelve 1.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lucky Duke</strong></td>
+<td style="text-align: center;"><img alt="Duke" src="img/luckyduke.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Cada vez que "desenfunda", levanta 2 cartas y elige la que prefiera.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Paul Regret</strong></td>
-<td style="text-align: center;"><img alt="Paul" src="img/paul.png" width="70" /></td>
+<td style="text-align: center;"><img alt="Paul" src="img/paulregret.png" width="60" /></td>
 <td style="text-align: center;">3</td>
-<td style="text-align: left;">Los demás jugadores le ven a una distancia aumentada en 1 (efecto Mustang permanente).</td>
+<td style="text-align: left;">Tiene un <em>Mustang</em> imaginario siempre activo (+1 distancia).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Slab el Exterminador</strong></td>
-<td style="text-align: center;"><img alt="Slab" src="img/slab.png" width="70" /></td>
+<td style="text-align: left;"><strong>Pedro Ramirez</strong></td>
+<td style="text-align: center;"><img alt="Pedro" src="img/pedroramirez.png" width="60" /></td>
 <td style="text-align: center;">4</td>
-<td style="text-align: left;">Para esquivar sus <em>¡BANG!</em>, los rivales necesitan jugar dos cartas de <em>¡FALLASTE!</em>.</td>
+<td style="text-align: left;">Puede robar su primera carta del descarte en vez del mazo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rose Doolan</strong></td>
+<td style="text-align: center;"><img alt="Rose" src="img/rosedoolan.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Tiene una <em>Mira</em> imaginaria siempre activa (-1 distancia).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sid Ketchum</strong></td>
+<td style="text-align: center;"><img alt="Sid" src="img/sidketchum.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Puede descartar 2 cartas para recuperar 1 vida.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Slab the Killer</strong></td>
+<td style="text-align: center;"><img alt="Slab" src="img/slabthekiller.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Hacen falta 2 <em>¡FALLASTE!</em> para esquivar sus disparos.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Suzy Lafayette</strong></td>
-<td style="text-align: center;"><img alt="Suzy" src="img/suzy.png" width="70" /></td>
+<td style="text-align: center;"><img alt="Suzy" src="img/suzylafayette.png" width="60" /></td>
 <td style="text-align: center;">4</td>
-<td style="text-align: left;">En cuanto se queda sin cartas en la mano, roba una carta del mazo automáticamente.</td>
+<td style="text-align: left;">Si se queda sin cartas en la mano, roba una inmediatamente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Vulture Sam</strong></td>
+<td style="text-align: center;"><img alt="Sam" src="img/vulturesam.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Se queda con las cartas de los jugadores eliminados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Willy the Kid</strong></td>
+<td style="text-align: center;"><img alt="Willy" src="img/willythekid.png" width="60" /></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Puede jugar cualquier número de cartas <em>¡BANG!</em> en su turno.</td>
 </tr>
 </tbody>
 </table>

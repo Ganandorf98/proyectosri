@@ -51,6 +51,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -242,6 +244,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roles y Objetivos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -258,6 +278,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#distribucion-de-roles-segun-jugadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribución de Roles según jugadores
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -364,6 +414,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#distribucion-de-roles-segun-jugadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribución de Roles según jugadores
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -380,11 +449,15 @@
 
 
 <h1 id="roles-y-objetivos">Roles y Objetivos</h1>
-<p>En el Salvaje Oeste, nadie sabe quién es quién (excepto el Sheriff).</p>
+<p>En BANG!, cada jugador recibe una carta de rol al azar que determina su objetivo en la partida. ¡Mantén tu identidad en secreto (a menos que seas el Sheriff)!</p>
+<details class="abstract" open="open">
+<summary>Fichas de Rol</summary>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Rol</th>
+<th style="text-align: center;">Imagen</th>
+<th style="text-align: center;">Copias</th>
 <th style="text-align: left;">Objetivo</th>
 <th style="text-align: left;">Identidad</th>
 </tr>
@@ -392,29 +465,43 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Sheriff</strong></td>
-<td style="text-align: left;">Eliminar a Forajidos y al Renegado.</td>
-<td style="text-align: left;">Visible</td>
+<td style="text-align: center;"><img alt="Sheriff" src="img/sheriff.png" width="60" /></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Eliminar a todos los Forajidos y al Renegado.</td>
+<td style="text-align: left;"><strong>Visible</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Alguacil</strong></td>
-<td style="text-align: left;">Proteger al Sheriff a toda costa.</td>
+<td style="text-align: center;"><img alt="Deputy" src="img/deputy.png" width="60" /></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Proteger al Sheriff a toda costa. Comparte la victoria con él.</td>
 <td style="text-align: left;">Oculta</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Forajido</strong></td>
-<td style="text-align: left;">Eliminar al Sheriff.</td>
+<td style="text-align: center;"><img alt="Outlaw" src="img/outlaw.png" width="60" /></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Eliminar al Sheriff. ¡Si el Sheriff muere, los Forajidos ganan!</td>
 <td style="text-align: left;">Oculta</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Renegado</strong></td>
-<td style="text-align: left;">Ser el último superviviente.</td>
+<td style="text-align: center;"><img alt="Renegade" src="img/renegade.png" width="60" /></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Ser el último superviviente. Debe matar al Sheriff en el duelo final.</td>
 <td style="text-align: left;">Oculta</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><strong>Nota:</strong> Si el Sheriff elimina a un Alguacil, ¡pierde todas sus cartas como penalización!</p>
-</blockquote>
+</details>
+<h3 id="distribucion-de-roles-segun-jugadores">Distribución de Roles según jugadores</h3>
+<p>Dependiendo de cuántos seáis en la mesa, la baraja de roles cambia:</p>
+<ul>
+<li><strong>4 jugadores:</strong> 1 Sheriff, 1 Renegado, 2 Forajidos.</li>
+<li><strong>5 jugadores:</strong> 1 Sheriff, 1 Renegado, 2 Forajidos, 1 Alguacil.</li>
+<li><strong>6 jugadores:</strong> 1 Sheriff, 1 Renegado, 3 Forajidos, 1 Alguacil.</li>
+<li><strong>7 jugadores:</strong> 1 Sheriff, 1 Renegado, 3 Forajidos, 2 Alguaciles.</li>
+</ul>
 
 
 
