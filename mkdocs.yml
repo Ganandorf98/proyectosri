@@ -5,6 +5,9 @@ site_url: https://ganandorf98.github.io/proyectosri/
 theme:
   name: material
   language: es
+  logo: img/logo.png
+  icon:
+    favicon: img/logo.png
   palette:
     primary: deep orange
     accent: amber

@@ -1,4 +1,4 @@
-# Welcome to the Wild West! :material-cowboy:
+# Welcome to the Wild West!
 
 This portal contains the fundamental rules for playing **BANG!**, the card game of gunfights, hidden roles, and outlaws.
 
